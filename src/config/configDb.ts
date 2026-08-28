@@ -1,6 +1,6 @@
 "use strict";
 import { DataSource } from "typeorm";
-//import { DATABASE, DB_USERNAME, PASSWORD, DB_HOST, DB_PORT } from "./configEnv.js";
+import { DATABASE, DB_USERNAME, PASSWORD, DB_HOST, DB_PORT } from "./configEnv.js";
 import UserEntity from "../entity/user.entity.js";
 
 export const AppDataSource = new DataSource({
