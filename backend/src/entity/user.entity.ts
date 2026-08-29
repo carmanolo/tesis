@@ -45,8 +45,8 @@ export const UserEntity = new EntitySchema<IUser>({
         updatedAt: {
             type: "timestamp",
             default: () => "CURRENT_TIMESTAMP",
-            onUpdate: () => "CURRENT_TIMESTAMP",
-        },
+            onUpdate: "CURRENT_TIMESTAMP",
+    },
     },
 });
 

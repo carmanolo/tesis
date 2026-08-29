@@ -2,10 +2,10 @@ import { Request, Response } from "express";
 import User from "../entity/user.entity.js";
 import { createUserSer, getUsersSer, patchUserSer, deleteUserSer, getUserSer } from "../services/user.service.js";
 import { AppDataSource } from "../config/configDb.js";
-import { createValidation, integrityValidation, updateValidation } from "../validations/user.validation.js";
-import { SHOW_ERRORS } from "../constants/settings.constants.js";
-import { idValidation } from "../validations/module/id.validation.js";
-import { handleErrorClient, handleErrorServer, handleSuccess } from "../Handlers/responseHandlers.js";
+import { createValidation, integrityValidation, updateValidation } from "../validations/user.validations.js"
+import { SHOW_ERRORS } from "../constants/ajustes.constants.js"
+import { idValidation } from "../validations/modules/id.validation.js";
+import { handleErrorClient, handleErrorServer, handleSuccess } from "../handlers/responseHandlers.js";
 import { USER_NO_ENCONTRADO } from "../constants/user.constants.js";
 
 export async function createUser(req: Request, res: Response): Promise<any> {

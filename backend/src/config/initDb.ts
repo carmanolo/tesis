@@ -11,18 +11,18 @@ export async function createUsers(): Promise<void> {
 
         const users = [
             {
-                username: "Administrador",
+                username: "Rodrigo",
                 rut: "12345678-9",
                 email: "admin@gmail.com",
                 password: await encryptPassword("admin123"),
                 role: "administrador"
             },
             {
-                username: "Estudiante",
+                username: "JuanitoPerez" ,
                 rut: "98765432-1",
                 email: "mailto@gmail.com",
                 password: await encryptPassword("estudiante123"),
-                role: "usuario"
+                role: "presidente cee"
             }
         ];
 

@@ -6,7 +6,7 @@ import { SESSION_SECRET } from "../config/configEnv.js";
 import {
   registerValidation,
   loginValidation,
-} from "../validations/auth.validation.js";
+} from "../validations/auth.validations.js";
 import { Request, Response } from "express";
 
 export async function register(req: Request, res: Response): Promise<any> {
