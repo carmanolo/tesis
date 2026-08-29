@@ -13,7 +13,7 @@ export function authenticateJwt(req: Request, res: Response, next: NextFunction)
   const token = authHeader.split(" ")[1];
 
   try {
-    const decoded = jwt.verify(token, SESSION_SECRET);
+    const decoded = jwt.verify(token, SESSION_SECRET) as { email?: string; rol?: string; [key: string]: any };
     req.user = decoded;
     next();
   } catch (error) {
